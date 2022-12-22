@@ -1,0 +1,19 @@
+<h1>Здесь будет окошко {{nomer_okoshka}}</h1> 
+{% for countryside in fenstertypes %}
+    <table border="1">
+    {% if countryside %}
+        <tr>
+            <td colspan="2"
+               width="100"
+               height="50">
+            </td>
+        </tr>
+    {% endif %}
+        <tr>
+            <td height="50"></td>
+            <td></td>
+        </tr>
+    </table>
+{% endfor %}
+
+<p style="color:blue">{{name}}</p>
