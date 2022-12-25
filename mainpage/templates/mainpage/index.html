@@ -1,31 +1,41 @@
 {% load static %}
 
-<!DOCTYPE html>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Garaz_title</title>
+    <link href="{% static 'mainpage/css/index.css' %}" rel="stylesheet" type="text/css" />
 
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Garaz_title</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-    <img src="https://18onlygame.ru/wp-content/uploads/0/3/4/034cf2ed5b44285586c8d29f5ecfcf8b.jpeg" width="100%">
-
+    <div class="time1", id="timer1"></div>
+    <span class="img_glavnaya"><img src="https://18onlygame.ru/wp-content/uploads/0/3/4/034cf2ed5b44285586c8d29f5ecfcf8b.jpeg" width="100%"></span>
+    <header>
+        <p><span class="header1">Гараж</span></p>
+        <nav>
+            <ul class="menu1">
+                <li>События</li>
+                <li>Телефонный справочник</li>
+                <li>Календарь</li>
+                <li>История</li>
+            </ul>
+            <ul class="menu2">
+                <li>Showrooms</li>
+                <li>Отдел оформления продаж</li>
+                <li>Руководство</li>
+                <li>Бухгалретрия</li>
+                <li>Отдел кадров</li>
+                <li>Концелярия</li>
+                <li>Охрана</li>
+            </ul>
+        </nav>
     <div class=name>
         <h1 style="color:blue" align="center">Гараж</h1>
     </div>
     <h1 style="color:blue" align="center">Гараж</h1>
+    </header>
 
+<script src="{% static 'mainpage/js/index.js' %}"></script>
 
-</body>
-
-</html>
-
-
-<h1>Здесь будет окошко {{nomer_okoshka}}</h1>
+{% comment %}
+        <h1>Здесь будет окошко {{nomer_okoshka}}</h1>
 {% for countryside in fenstertypes %}
     <table border="1">
     {% if countryside %}
@@ -44,3 +54,4 @@
 {% endfor %}
 
 <p style="color:blue">{{name}}</p>
+{% endcomment %}
