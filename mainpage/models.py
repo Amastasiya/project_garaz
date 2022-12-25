@@ -8,5 +8,6 @@ class Employee(models.Model):
     name = models.CharField(default='', max_length=1024)
     fathername = models.CharField(default='', max_length=1024)
     date_of_birth = models.DateTimeField()
-    phone = models.IntegerField()
-    email = models.CharField(default='', max_length=1024)
+    phone_working = models.IntegerField()
+    phone_personal = models.IntegerField()
+    email_working = models.CharField(default='', max_length=1024)
