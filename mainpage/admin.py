@@ -1,6 +1,12 @@
 from django.contrib import admin
 
-# Register your models here.
-
 from .models import Employee
-admin.site.register(Employee)
+@admin.register(Employee)
+class EmployeeAdmin(admin.ModelAdmin):
+    #list_filter = ()
+    list_display = [field.name for field in Employee._meta.get_fields()]
+from .models import Guide
+@admin.register(Guide)
+class GuideAdmin(admin.ModelAdmin):
+    list_display = [field.name for field in Guide._meta.get_fields()]
+
