@@ -22,6 +22,7 @@ ul.menu1 {
 	left: 300px;
 }
 ul.menu1 {
+    list-style-type: none;
     display: inline;
     margin-right: 5px;
     margin: 0 30px;
