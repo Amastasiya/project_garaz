@@ -22,8 +22,8 @@ ul.menu1 {
 	left: 300px;
 }
 ul.menu1 {
+    display: flex;
     list-style-type: none;
-    display: inline;
     margin-right: 5px;
     margin: 0 30px;
     padding: 3px;
@@ -33,6 +33,9 @@ ul.menu1 {
 ul.menu1 a {
     text-decoration: none;
     color: black;
+    margin-right: 5px;
+    margin: 0 30px;
+    padding: 3px;
 }
 ul.menu2 {
     margin: 0;
