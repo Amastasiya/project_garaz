@@ -21,7 +21,7 @@ ul.menu1 {
 	top: 45px;
 	left: 300px;
 }
-ul.menu1 {
+ul.menu1 li {
     display: flex;
     list-style-type: none;
     margin-right: 5px;
