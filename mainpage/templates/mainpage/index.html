@@ -6,15 +6,15 @@
     <link href="{% static 'mainpage/css/index.css' %}" rel="stylesheet" type="text/css" />
 <div class="start">
     <div class="time1" id="timer1"></div>
+    <div class="clock"></div>
     <span class="img_glavnaya"><img src="https://18onlygame.ru/wp-content/uploads/0/3/4/034cf2ed5b44285586c8d29f5ecfcf8b.jpeg" width="100%"></span>
     <header>
         <p><span class="header1">Гараж</span></p>
         <nav>
             <ul class="menu1">
-                <li><a href="">{{menu_one}}</a></li>
-                <li><a href="">Телефонный справочник</a></li>
-                <li><a href="">Календарь</a></li>
-                <li><a href="">История</a></li>
+                {% for nazvanie in menu_one %}
+                <li><a href="">{{nazvanie}}</a></li>
+                {% endfor %}
             </ul>
             <ul class="menu2">
                 <li><a href="">Showrooms</a></li>
@@ -29,8 +29,11 @@
     </header>
 </div>
 
+{% for user in employee %}
+<p>{{user.position}}</p>
+<p>{{user.surname}} {{user.name}} {{user.fathername}}</p>
+{% endfor %}
 
-<p>{{employee}}</p>
 <p>{{guide}}</p>
 
 <script src="{% static 'mainpage/js/index.js' %}"></script>

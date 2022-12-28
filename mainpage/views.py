@@ -4,10 +4,11 @@ from .models import Guide
 
 # Create your views here.
 def index(request):
+    employee = Employee.objects.all()
     context = {
         'nomer_okoshka': '9 и 3/4',
         'name': 'Гараж', # добавили для index.html
-        'employee': Employee.objects.all(),
+        'employee': employee,
         'guide': Guide.objects.all(),
         'menu_one': [
             'События',
@@ -16,6 +17,7 @@ def index(request):
             'История'
         ]
     }
+
 
     return render(
         request,               #Запрос
