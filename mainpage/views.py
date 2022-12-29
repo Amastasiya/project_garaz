@@ -17,7 +17,7 @@ def index(request):
             'История'
         ]
     }
-
+    
 
     return render(
         request,               #Запрос

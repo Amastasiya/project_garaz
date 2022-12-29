@@ -15,6 +15,8 @@
 	width: 100%;
 }
 ul.menu1 {
+    display: flex;
+    list-style-type: none;
     margin: 0;
     padding: 4px;
     position: absolute;
@@ -22,10 +24,10 @@ ul.menu1 {
 	left: 300px;
 }
 ul.menu1 li {
-    display: flex;
-    list-style-type: none;
+    /*display: flex;
+    list-style-type: none;*/
     margin-right: 5px;
-    margin: 0 30px;
+    margin: 0 20px;
     padding: 3px;
     font-size: 25px;
     font-family: Times, Times New Roman, serif;
@@ -52,6 +54,6 @@ ul.menu2 li {
 .time1 {
     color: black;
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 40px;
 }
