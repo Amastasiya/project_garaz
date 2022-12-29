@@ -1,4 +1,6 @@
 {% load static %}
+<form action="{% url 'sobytiya' %}" method="post">
+    {% csrf_token %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Garaz_title</title>
@@ -26,8 +28,15 @@
             </ul>
         </nav>
     </header>
-</div>
+    <div class="sobytia">
+        <div class="com">
+            <pre>
+            </pre>
 
+        </div>
+    </div>
+</div>
+</form>
 {% for user in employee %}
 <p>{{user.position}}</p>
 <p>{{user.surname}} {{user.name}} {{user.fathername}}</p>
