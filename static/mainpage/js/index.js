@@ -11,6 +11,12 @@ function insert_date() {
 }
 
 insert_date();
+
+function cry() {
+    console.log("search")
+    fetch()
+
+}
 /*window.onload = function(){
   window.setInterval(function(){
   var now = new Date();
