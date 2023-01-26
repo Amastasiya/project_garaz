@@ -35,9 +35,10 @@
         </div>
         <input type="text" name="" id="">
     </div>
+    {% csrf_token %}
     <form class="search">
-        <input type="text" placeholder="Искать здесь...">
-        <button type="button">Поиск</button>
+        <input type="text" placeholder="Искать здесь..."> </input>
+        <input type="button" value="Поиск" onclick="cry()"> </input>
     </form>
 </div>
 </form>
