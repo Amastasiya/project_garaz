@@ -37,8 +37,6 @@ function cry() {
 	}).then(result => {
 		console.log(result)
 	});
-
-
 }
 /*window.onload = function(){
   window.setInterval(function(){
